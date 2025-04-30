@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;  /* Dark background */
+    color: #e0e0e0;  /* Soft text color for readability */
+    overflow-x: hidden;
+  }
+  header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;  /* Dark grey for header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    color: #00bcd4;  /* Bright cyan accent color */
+  }
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #b0bec5;  /* Soft grey text */
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: #00bcd4;  /* Highlight accent color */
+  }
+  .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;  /* White color for titles */
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #b0bec5;  /* Soft grey text for description */
+    max-width: 600px;
+  }
+  .about, .projects, .contact {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .about h3, .projects h3, .contact h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00bcd4;  /* Accent color for section titles */
+  }
+  .projects .card {
+    background: #232323;  /* Dark card background */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #00bcd4;  /* Bright cyan border */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+  }
+  .projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);  /* Soft glowing effect */
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact input, .contact textarea {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #1e1e1e;  /* Dark input background */
+    color: #e0e0e0;  /* Light text in inputs */
+  }
+  .contact input:focus, .contact textarea:focus {
+    border: 2px solid #00bcd4;  /* Focus border in cyan */
+  }
+  .contact button {
+    padding: 0.8rem;
+    background: #00bcd4;  /* Bright cyan button */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact button:hover {
+    background: #00acc1;  /* Slightly darker cyan when hovered */
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #121212;  /* Dark footer background */
+    color: #777;  /* Soft grey text */
+  }
+  /* Modal Styles */
+.modal {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #121212;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #00bcd4;
+    width: 80%;
+    max-width: 600px;
+    color: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    color: #00bcd4;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #fff;
+  }
+  
+  .modal h3 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+  }
+  
+  .modal ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  

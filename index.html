@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krish | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Krishna</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hey, I'm Krishna 👋</h2>
+    <p>I'm an 18-year-old aspiring developer and entrepreneur from India. I'm building cool stuff with Python, JavaScript, and MySQL, and love turning ideas into reality.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>I'm a middle-class student passionate about tech, fitness, and creativity. I run an Instagram page <strong>@Krish_lyfts</strong> where I share fitness content, and I'm currently building projects like gym apps and online booking systems using Flask, HTML/CSS, and MySQL.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
+    
+    <div class="card">
+      <h4>Panipuri Stall Business</h4>
+      <p>Ran a 3-day successful stall at a college event in Hyderabad, managing budget, logistics, and marketing.</p>
+    </div>
+    <!-- Add this inside the <section id="projects"> -->
+<div class="card" id="fitness-card">
+    <h4>Fitness Web App</h4>
+    <p>A fitness tracking and gym booking system with BMI calculator, user dashboard, class schedule, and personal records — built with Flask and MySQL.</p>
+  </div>
+  
+  <!-- Modal for Fitness Web App -->
+  <div id="fitness-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <h3>Fitness Web App Overview</h3>
+      <p>This web app allows users to track their fitness goals, calculate BMI, view class schedules, and book gym sessions. The backend is built using Flask, MySQL, and PHP to handle user data, while the frontend utilizes HTML, CSS, and JavaScript for an interactive experience.</p>
+      <ul>
+        <li>Features include user registration, class booking, and fitness tracking.</li>
+        <li>The app integrates a BMI calculator that provides personalized health insights.</li>
+        <li>Users can log workouts and track personal records.</li>
+      </ul>
+    </div>
+  </div>
+  
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Krish. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
